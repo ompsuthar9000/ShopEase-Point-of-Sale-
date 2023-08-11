@@ -1,0 +1,97 @@
+@import "./../../../css-config/mixins.scss";
+
+.listbody {
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    overflow: scroll;
+
+
+    h1 {
+        font-weight: 600;
+    }
+
+    .productsbody {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+    }
+
+
+}
+
+
+.productsubcard {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 95vw;
+    border-radius: 10px;
+    padding: 10px;
+
+    &:hover {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        scale: 1.01;
+    }
+
+    justify-content: space-between;
+    text-align: center;
+
+    @include md {
+        width: 80vw;
+    }
+
+    img {
+        width: fit-content;
+        height: 100%;
+    }
+
+    .name {
+        color: orangered;
+        width: 100%;
+    }
+
+    .avilableqty {
+        color: gray;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .price {
+        color: green;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    svg {
+        text-align: center;
+        margin: auto 0;
+        font-size: large;
+        width: 100%;
+    }
+
+}
+
+.oval {
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dna {
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
